@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Terminal Font",
+    "description": "Choose the terminal font family and size so Nerd Font glyphs (oh-my-posh, powerline, icons) render correctly."
+  }
+}

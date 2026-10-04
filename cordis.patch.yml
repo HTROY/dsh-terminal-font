@@ -1,0 +1,5 @@
+# dsh-terminal-font bundle patch: one host row over the current profile.
+# The row id doubles as the settings namespace the bundle owns.
+- insert:
+    - id: terminal-font
+      name: dsh-terminal-font

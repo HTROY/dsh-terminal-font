@@ -1,0 +1,85 @@
+{
+  "name": "dsh-terminal-font",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "DeepSeek Harness plugin: set the sidebar terminal font (Nerd Font family and size) from Settings, so oh-my-posh / Powerline / Nerd Font glyphs render correctly.",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "client-plugin",
+    "terminal",
+    "xterm",
+    "font",
+    "nerd-font",
+    "oh-my-posh",
+    "powerline"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "dshhub": {
+    "schemaVersion": 1,
+    "displayName": "Terminal Font",
+    "summary": "在设置中为侧边栏终端选择字体与字号，修正 oh-my-posh / Powerline / Nerd Font 图标显示为方块的问题。",
+    "categories": [
+      "Web UI",
+      "终端"
+    ],
+    "surfaces": [
+      "host",
+      "web"
+    ],
+    "capabilities": {
+      "provides": []
+    },
+    "compatibility": {
+      "dsh": ">=0.2.0-rc.1 <0.3.0-0",
+      "node": ">=20"
+    },
+    "permissions": {}
+  },
+  "meta": {
+    "title": "Terminal Font",
+    "description": "Choose the terminal font family and size so Nerd Font glyphs (oh-my-posh, powerline, icons) render correctly."
+  },
+  "files": [
+    "client.js",
+    "index.js",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/verify.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HTROY/dsh-terminal-font.git"
+  },
+  "homepage": "https://github.com/HTROY/dsh-terminal-font#readme",
+  "bugs": {
+    "url": "https://github.com/HTROY/dsh-terminal-font/issues"
+  },
+  "author": "HTROY",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}

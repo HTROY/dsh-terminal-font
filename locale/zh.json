@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "终端字体",
+    "description": "设置侧边栏终端使用的字体与字号，让 oh-my-posh、Powerline 与 Nerd Font 图标正确显示。"
+  }
+}

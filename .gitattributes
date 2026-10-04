@@ -1,0 +1,2 @@
+# Keep the repository LF everywhere so a git install behaves the same on every platform.
+* text=auto eol=lf
